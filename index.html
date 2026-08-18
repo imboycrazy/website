@@ -3,42 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>strona niefunkcjonalna</title>
+    <title>tobis</title>
     <link rel="icon" type="image/png" href="logo.png">
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #09091e, #13071e); 
-            height: 100vh;
+        * {
+            box-sizing: border-box;
+        }
+        body {
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ccccd6; 
-            text-align: center;
+            padding: 60px 40px;
+            min-height: 100vh;
+            background-color: #05050d;
+            background-image: 
+                radial-gradient(circle at 85% 30%, rgba(93, 63, 143, 0.35) 0%, rgba(5, 5, 13, 0) 50%),
+                radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 100% 100%, 24px 24px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
-        .content { 
-            max-width: 650px; 
-            padding: 20px; 
+        .header-container {
+            margin-bottom: 40px;
         }
-        p { 
-            font-size: 19px; 
-            font-weight: 500; 
-            line-height: 1.5;
-            letter-spacing: -0.4px; 
+        .title {
+            font-size: 32px;
+            font-weight: 400;
+            font-style: italic;
+            font-family: Georgia, serif;
+            letter-spacing: -0.5px;
+            color: #e2e2e9;
+            margin: 0 0 8px 0;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #4a4a5a;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
             margin: 0;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            color: #ffffff;
+            margin: 0 0 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            background: #0b0b14;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 140px;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .company-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0;
+            line-height: 1.3;
+        }
+        .role-text {
+            font-size: 13.5px;
+            color: #8a8a98;
+            margin: 0 0 16px 0;
+            line-height: 1.4;
+            text-align: right;
+        }
+        .role-text.large {
+            font-size: 15px;
+        }
+        .stat-text {
+            font-size: 11px;
+            color: #4a4a5a;
+            font-weight: 600;
+            margin: 0;
+            text-align: right;
         }
     </style>
 </head>
 <body>
 
-    <div class="content">
-        <p>strona (jeszcze) niefunkcjonalna. discord: @imboycrazy</p>
+    <div class="header-container">
+        <h1 class="title">tobis</h1>
+        <p class="subtitle">something about me</p>
+    </div>
+
+    <h2 class="section-title">Positions</h2>
+
+    <div class="grid-container">
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="company-name">Dino Studios</h3>
+                </div>
+                <p class="role-text">Former CEO,<br>now Creative Director</p>
+            </div>
+            <p class="stat-text">330+</p>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="company-name">Ladybug PLC</h3>
+                </div>
+                <p class="role-text large">Former Head Office</p>
+            </div>
+            <p class="stat-text">25k+</p>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="company-name">Slayyytercord</h3>
+                </div>
+                <p class="role-text large">Server Manager</p>
+            </div>
+            <p class="stat-text">750+</p>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="company-name">PS99 Leaks</h3>
+                </div>
+                <p class="role-text">Former Server Administrator, now Moderator</p>
+            </div>
+            <p class="stat-text">N/A</p>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="company-name">Almore Shopping</h3>
+                </div>
+                <p class="role-text">Junior Human Resources</p>
+            </div>
+            <p class="stat-text">80k+</p>
+        </div>
     </div>
 
 </body>
 </html>
- 
- 
